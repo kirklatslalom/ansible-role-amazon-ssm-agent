@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """Module containing the tests for the default scenario."""
 
 # Standard Python Libraries
