@@ -49,10 +49,6 @@ repos:
         args:
           - --args=--path=$(GIT_DIR)/infra/terraform/ec2/plan.json
         verbose: true
-  - repo: https://github.com/jazzband/pip-tools
-    rev: 6.12.3
-    hooks:
-      - id: pip-compile
   - repo: https://github.com/aws-cloudformation/cfn-python-lint
     rev: v0.76.1
     hooks:
@@ -72,7 +68,7 @@ repos:
       - id: ansible-lint
         name: Ansible-lint
         description: This hook runs ansible-lint.
-        entry: ansible-lint --force-color ansible
+        entry: ansible-lint --force-color .
         language: python
         # do not pass files to ansible-lint, see:
         # https://github.com/ansible-community/ansible-lint/issues/611

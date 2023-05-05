@@ -19,15 +19,12 @@ galaxy_info:
   platforms:
     - name: Amazon Linux 2
       versions:
-        - any
+        - all
     - name: Debian
       versions:
         - stretch
         - buster
         - bullseye
-        # Kali linux isn't an option here, but it is based on
-        # Debian Testing:
-        # https://www.kali.org/docs/policy/kali-linux-relationship-with-debian
         - bookworm
     - name: Fedora
       versions:

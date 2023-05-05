@@ -6,6 +6,9 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
   if [ ! -f $DIR/pylint ]; then
     brew install pylint
   fi
+  if [ ! -f $DIR/ansible-lint ]; then
+    brew install ansible-lint
+  fi
   if [ ! -f $DIR/ansible ]; then
     brew install ansible
   fi
